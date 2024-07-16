@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-size: 16px;
+  background: url('pattern-background-desktop.svg'), hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  font-family: Red Hat Display;
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+}
+
+main {
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  top: 80px;
+  left : 37.5%;
+}
+
+.hero {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+article {
+  height: 80%;
+  padding: 20px;
+}
+
+ h2 {
+  margin: 10px 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+} 
+
+ p {
+  margin: 10px 20px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  font-size: 0.8em;
+} 
+
+.subset {
+  display: inline-flex;
+  margin: 10px 0 10px;
+  padding: 10px 10px 10px 10px;
+  width: 90%;
+  background-color:hsl(225, 100%, 98%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.subset img {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  height: 40px;
+}
+
+.subset a {
+  position: relative;
+  top: 22px;
+  left: 15px;
+  color: hsl(245, 75%, 52%);
+  float: right;
+  font-size: 0.7em;
+  font-weight: 900;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(245, 75%, 52%, 0.7);
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.pp {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  margin: 10px 0;
+  color: hsl(225, 100%, 98%);
+}
+
+.pp:hover {
+  cursor: pointer;
+  background-color: hsl(245, 75%, 52%, 0.7);
+}
+
+.cancel {
+  padding: 10px;
+  color: hsl(224, 23%, 55%);
+  border: none;
+  background-color: white;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan {
+  line-height: 0.8;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+.plan h5 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url('pattern-background-mobile.svg');
+  }
+
+  main {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border-radius: 20px;
+  }
+
+  section {
+    border-radius: 20px;
+  }
+
+  .hero {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .subset a {
+    position: relative;
+  } 
+}
